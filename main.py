@@ -26,10 +26,10 @@ Hablai:Sistema de Ouvidoria para registro e gerenciamento de reclamações
 lista = []
 #==Início da definição de funções======
 def op1List():
-    print("Posição,Reclamação")
+    print("Posição;Reclamação")
     for i in range(len(lista)):
         item = lista[i]  # Acessamos o valor pelo índice
-        print (f"{i+1},{item}")
+        print (f"{i+1};{item}")
     
 def op2Add():
     while True:
@@ -86,9 +86,9 @@ def op5Remove():
         print(f"Você acabou de remover {item} ")
     else:
         print("Item não registrado")
-    print("Agora sua lista está \nPosição,Reclamação")
-    for i in range(len(lista)):
-        print(f"{i+1};{lista[i]}")
+print("Agora sua lista está \nPosição,Reclamação")
+for i in range(len(lista)):
+    print(f"{i+1};{lista[i]}")
 #==Fim da definição de funções=========
 print("Bem vindo ao Hablai...")
 while True: #Menu
@@ -126,4 +126,3 @@ while True: #Menu
             else:print("Opção inválida,escolha uma opção entre 1 e 7 !")
         except ValueError:
             print("Escolha uma opção válida,deve ser digitado um número entre 1 e 7")
-            break
